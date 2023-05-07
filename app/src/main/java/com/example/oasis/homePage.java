@@ -11,6 +11,5 @@ public class homePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
     }
-    //try K
-    //hellooo
+    //Oasis
 }
