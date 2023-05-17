@@ -14,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
     private Button createBtn;
     private Button forgotBtn;
     private Button homeBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main); // Set the content view here
 
         createBtn = findViewById(R.id.createBtn);
         createBtn.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     public void openForgotPasswordPage(){
         Intent i = new Intent(this, forgotPassword.class);
