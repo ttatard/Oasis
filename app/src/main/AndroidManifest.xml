@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Oasis"
         tools:targetApi="31">
         <activity
+            android:name=".Edna"
+            android:exported="false" />
+        <activity
+            android:name=".Bob"
+            android:exported="false" />
+        <activity
             android:name=".Chat"
             android:exported="false" />
         <activity
