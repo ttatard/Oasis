@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.example.oasis.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    //private Button createBtn;
+    private Button createBtn;
     private Button forgotBtn;
     private Button homeBtn;
 
