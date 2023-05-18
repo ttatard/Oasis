@@ -1,28 +1,11 @@
 package com.example.oasis;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.chattutorial.databinding.ActivityMainBinding;
-
-import org.jetbrains.annotations.Nullable;
-
-import io.getstream.chat.android.client.ChatClient;
-import io.getstream.chat.android.client.api.models.FilterObject;
-import io.getstream.chat.android.client.logger.ChatLogLevel;
-import io.getstream.chat.android.client.models.Filters;
-import io.getstream.chat.android.client.models.User;
-import io.getstream.chat.android.offline.model.message.attachments.UploadAttachmentsNetworkType;
-import io.getstream.chat.android.offline.plugin.configuration.Config;
-import io.getstream.chat.android.offline.plugin.factory.StreamOfflinePluginFactory;
-import io.getstream.chat.android.ui.channel.list.viewmodel.ChannelListViewModel;
-import io.getstream.chat.android.ui.channel.list.viewmodel.ChannelListViewModelBinding;
-import io.getstream.chat.android.ui.channel.list.viewmodel.factory.ChannelListViewModelFactory;
-
-import static java.util.Collections.singletonList;
-
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class Chat extends AppCompatActivity {
 
@@ -31,4 +14,26 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
     }
+    ImageView imageView3 = findViewById(R.id.imageView3);
+imageView3.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // Handle the click event here
+            // Example: Redirect to another activity
+            Intent intent = new Intent(MainActivity.this, AnotherActivity.class);
+            startActivity(intent);
+        }
+    });
+
+    ImageView imageView4 = findViewById(R.id.imageView4);
+imageView4.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // Handle the click event here
+            // Example: Redirect to another activity
+            Intent intent = new Intent(MainActivity.this, AnotherActivity.class);
+            startActivity(intent);
+        }
+    });
+
 }
